@@ -13,7 +13,7 @@ export class ChatComponent implements OnInit {
 
   ngOnInit() {
   	jQuery('.owl-carousel').owlCarousel({
-    margin:48,
+    margin:25,
     loop:true,
     dots: false,
     autoWidth:true,
@@ -21,15 +21,15 @@ export class ChatComponent implements OnInit {
     responsiveClass:true,
     responsive:{
         0:{
-            items:1,
+            items:4,
             nav:false
         },
         600:{
-            items:3,
+            items:10,
             nav:false
         },
         1000:{
-            items:10,
+            items: 20,
             loop:true
         }
     }

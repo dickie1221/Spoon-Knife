@@ -1,0 +1,39 @@
+.options-content{
+
+	.options-user-data{
+		text-align: center;
+		background-color: $light-background-color;
+		//border-radius: 0 0 25% 25%;
+		min-height: 300px;
+		padding-top: 50px;
+		color: $dark-background-color;
+		.user-picture{
+			height: 120px;
+			width: 120px;
+			margin: 0 auto 0 auto;
+			background-color: $lightest-background-color;
+			border-radius: 100%;
+			color: $light-background-color;
+			text-align: center;
+			overflow: hidden;
+			a{
+				font-size: 6.3em;
+				border-radius: 100%;
+			}
+		}
+	}
+	.options-nav{
+		background-color: $lightest-background-color;
+		border-bottom: solid 2px $light-background-color;
+		margin: 0 5px 0 5px;
+		margin-bottom: 15px;
+		font-weight: 400;
+		font-size: 1.5em;
+		.split{
+			border-right: solid 2px $light-background-color;
+		}
+		a{
+			color: $dark-background-color;
+		}
+}
+}
