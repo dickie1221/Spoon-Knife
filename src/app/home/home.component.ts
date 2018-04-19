@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  	jQuery('.owl-carousel').owlCarousel({
+  	jQuery('.owl-carousel-one').owlCarousel({
     margin:48,
     loop:true,
     dots: false,
@@ -31,24 +31,26 @@ export class HomeComponent implements OnInit {
             items:5,
             loop:true
         }
-    }
-})
-
-    var owl = jQuery('.owl-carousel2');
-    owl.owlCarousel({
-    items:4,
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoplayTimeout:1000,
-    autoplayHoverPause:true
+      }
     });
-    jQuery('.play').on('click',function(){
-        owl.trigger('play.owl.autoplay',[1000])
-    })
-    jQuery('.stop').on('click',function(){
-        owl.trigger('stop.owl.autoplay')
-    })
+
+    jQuery('.owl-carousel-two').owlCarousel({
+    loop:true,
+    margin:48,
+    nav:true,
+    items:4,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+      }
+  });
   }
 
 }
