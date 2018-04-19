@@ -8,6 +8,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ChatSoloListComponent } from './chat-solo-list/chat-solo-list.component';
 import { ChatGroupListComponent } from './chat-group-list/chat-group-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { OptionInfoComponent } from './option-info/option-info.component';
+import { OptionSettingsComponent } from './option-settings/option-settings.component';
 
 const routes: Routes = [
 	{ path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -28,4 +30,5 @@ const routes: Routes = [
 
 export class AppRoutingModule { } 
 export const routingComponents = [ChatComponent, OptionsComponent, 
-HomeComponent, PageNotFoundComponent, LoginComponent, SignUpComponent, ChatGroupListComponent, ChatSoloListComponent]
+HomeComponent, PageNotFoundComponent, LoginComponent, SignUpComponent, ChatGroupListComponent, ChatSoloListComponent, OptionInfoComponent,
+    OptionSettingsComponent]

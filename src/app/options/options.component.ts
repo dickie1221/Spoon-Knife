@@ -13,12 +13,12 @@ export class OptionsComponent implements OnInit {
   ngOnInit() {
     jQuery('.owl-carousel-two').owlCarousel({
     margin:48,
-    loop:true,
+    loop: false,
     dots: true,
     nav: false,
     center: true,
     autoWidth:true,
-    items:1,
+    items: 4,
     URLhashListener:true,
     autoplayHoverPause:true,
     startPosition: 'URLHash'
