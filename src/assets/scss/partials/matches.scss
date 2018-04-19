@@ -10,17 +10,20 @@
 
 }
 .match-nav{
-	background-color: $lightest-background-color;
-	border-bottom: solid 2px $light-background-color;
-	margin: 0 5px 0 5px;
+	background-color: $light-background-color;
+	//border-bottom: solid 2px $dark-background-color;
+	@include boxshadow;
 	margin-bottom: 15px;
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 1.5em;
 	.split{
-		border-right: solid 2px $light-background-color;
+		border-right: solid 2px $light-font-color;
 	}
 	a{
 		color: $dark-background-color;
+	}
+	.active{
+		color: $darker-background-color !important;
 	}
 }
 

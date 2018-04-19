@@ -33,6 +33,22 @@ export class HomeComponent implements OnInit {
         }
     }
 })
+
+    var owl = jQuery('.owl-carousel2');
+    owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+    });
+    jQuery('.play').on('click',function(){
+        owl.trigger('play.owl.autoplay',[1000])
+    })
+    jQuery('.stop').on('click',function(){
+        owl.trigger('stop.owl.autoplay')
+    })
   }
 
 }

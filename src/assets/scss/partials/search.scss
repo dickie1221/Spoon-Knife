@@ -2,6 +2,7 @@
 	background-color: $light-background-color;
 	height: 340px;
 	padding: 120px 0 120px 0;
+	@include boxshadow;
 	.input-group-prepend{
 		width: 100%;
 	}

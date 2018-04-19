@@ -5,11 +5,15 @@ import {OptionsComponent} from './options/options.component';
 import {HomeComponent} from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { ChatSoloListComponent } from './chat-solo-list/chat-solo-list.component';
+import { ChatGroupListComponent } from './chat-group-list/chat-group-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
 	{ path: '', redirectTo: '/home', pathMatch: 'full'},
 	{ path: 'home', component: HomeComponent},
+	{ path: 'chat/:id', component: ChatGroupListComponent},
+	{ path: 'chat/:chatId', component: ChatSoloListComponent},
 	{ path: 'chat', component: ChatComponent},
 	{ path: 'options', component: OptionsComponent},
 	{ path: 'login', component: LoginComponent},
@@ -23,4 +27,5 @@ const routes: Routes = [
 })
 
 export class AppRoutingModule { } 
-export const routingComponents = [ChatComponent, OptionsComponent, HomeComponent, PageNotFoundComponent, LoginComponent, SignUpComponent]
+export const routingComponents = [ChatComponent, OptionsComponent, 
+HomeComponent, PageNotFoundComponent, LoginComponent, SignUpComponent, ChatGroupListComponent, ChatSoloListComponent]
