@@ -14,8 +14,8 @@ import { OptionSettingsComponent } from './option-settings/option-settings.compo
 const routes: Routes = [
 	{ path: '', redirectTo: '/home', pathMatch: 'full'},
 	{ path: 'home', component: HomeComponent},
-	{ path: 'chat/:id', component: ChatGroupListComponent},
-	{ path: 'chat/:chatId', component: ChatSoloListComponent},
+	{ path: 'chat/group', component: ChatGroupListComponent},
+	{ path: 'chat/solo', component: ChatSoloListComponent},
 	{ path: 'chat', component: ChatComponent},
 	{ path: 'options', component: OptionsComponent},
 	{ path: 'login', component: LoginComponent},
