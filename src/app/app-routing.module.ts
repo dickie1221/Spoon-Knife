@@ -12,7 +12,7 @@ import { OptionInfoComponent } from './option-info/option-info.component';
 import { OptionSettingsComponent } from './option-settings/option-settings.component';
 
 const routes: Routes = [
-	{ path: '', redirectTo: '/home', pathMatch: 'full'},
+	{ path: '', redirectTo: '/', pathMatch: 'full'},
 	{ path: 'home', component: HomeComponent},
 	{ path: 'chat/group', component: ChatGroupListComponent},
 	{ path: 'chat/solo', component: ChatSoloListComponent},
